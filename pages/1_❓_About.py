@@ -34,6 +34,14 @@ Through this project, Vira aims to demonstrate her passion for data analytics, b
 )
 
 st.subheader("How to reach me?", divider=True)
-_left, mid, _right = st.columns(3)
-_left.markdown("[![Title]('https://img.icons8.com/material-outlined/48/000000/github.png')]('https://github.com/aryawisnu')")
-mid.markdown("[![Title]('https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg')]('https://www.linkedin.com/in/vira-angelina/')")
+_col1, _col2, _col3, _col4, _col5, _col6, _col7, _col8, _col9, _col10 = st.columns(10)
+_col1.markdown(
+    """<a href="https://www.linkedin.com/in/vira-angelina/">
+    <img src="data:image/png;base64,{}" width="25">
+    </a>""".format(base64.b64encode(open(".\icon\linkedin.png", "rb").read()).decode()),
+    unsafe_allow_html=True,)
+_col2.markdown(
+    """<a href="https://www.linkedin.com/in/vira-angelina/">
+    <img src="data:image/png;base64,{}" width="25">
+    </a>""".format(base64.b64encode(open(".\icon\github.png", "rb").read()).decode()),
+    unsafe_allow_html=True,)
