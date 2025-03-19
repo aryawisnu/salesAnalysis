@@ -1,4 +1,5 @@
 import streamlit as st
+import base64
 
 st.set_page_config(page_title="Sales Analysis Tools", page_icon="📊")
 st.sidebar.header("📊 Sales Analysis Tools", divider=True)
