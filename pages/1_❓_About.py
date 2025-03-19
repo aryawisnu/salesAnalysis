@@ -39,10 +39,10 @@ _col1, _col2, _col3, _col4, _col5, _col6, _col7, _col8, _col9, _col10 = st.colum
 _col1.markdown(
     """<a href="https://www.linkedin.com/in/vira-angelina/">
     <img src="data:image/png;base64,{}" width="25">
-    </a>""".format(base64.b64encode(open(".\icon\linkedin.png", "rb").read()).decode()),
+    </a>""".format(base64.b64encode(open("./icon/linkedin.png", "rb").read()).decode()),
     unsafe_allow_html=True,)
 _col2.markdown(
     """<a href="https://www.linkedin.com/in/vira-angelina/">
     <img src="data:image/png;base64,{}" width="25">
-    </a>""".format(base64.b64encode(open(".\icon\github.png", "rb").read()).decode()),
+    </a>""".format(base64.b64encode(open("./icon/github.png", "rb").read()).decode()),
     unsafe_allow_html=True,)
