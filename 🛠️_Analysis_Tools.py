@@ -56,7 +56,7 @@ else:
     dfReady = False
 
 # Template Download
-with open('.\supermarketSales_example.csv') as f:
+with open('./supermarketSales_example.csv') as f:
    st.download_button('Download Template CSV', f, file_name='template_example.csv')
 
 # Multiple Tab Setup
