@@ -37,7 +37,7 @@ Upload your files, and let us help you tabulate data, uncover key insights, and 
 """
 )
 
-#File Uploader
+# File Uploader
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
     global df
@@ -55,8 +55,9 @@ else:
     st.write("Please Upload File First")
     dfReady = False
 
-#Data Processing
-# df=pd.read_csv("F:\PythonEnv\Streamlit\supermarketSales_example.csv")
+# Template Download
+with open('.\supermarketSales_example.csv') as f:
+   st.download_button('Download Template CSV', f, file_name='template_example.csv')
 
 # Multiple Tab Setup
 tab1, tab2, tab3, tab4 = st.tabs(["📅 Data", "🤑 Sales", "📣 Marketting", "📦 Product"])
